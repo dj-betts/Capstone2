@@ -24,7 +24,7 @@
 - *Resources:* Galvanize DSI Entry survey data. webscrapping the linkedin galvanize alum page.
 - *Obstacles:* Can I have that data? All the data I've seen is already aggregated.
 
--**Free** 
+-**Free BI analysis** 
 - *Features:* some data from a small business
 - *Target:* any BI analysis they don't have the budget to explore
 - *Resources:* I'd have to find a business owner or BI team leader. I know a few, but haven't initiated.
