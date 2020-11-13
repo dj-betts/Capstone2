@@ -15,7 +15,7 @@
 -**BS detection** 
 - *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). 
 - *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels.
-- *Resources:* Twitter or Facebook API w/ articles flagged for "fake"
+- *Resources:* Twitter or Facebook API w/ articles flagged as "fake"
 - *Obstacles:* I don't know. I just thought of this idea. Is it possible w/ my time and skill set restraints? 
 
 -**Beating the Odds** 
