@@ -1,5 +1,5 @@
 # In no particular order.
--**Building a better neighborhood** 
+-**Building a better neighborhood:**
 - *Features:* strave heat map and crime data base joined on geodata.
 - *Target:* crime, housing price, some social/econ variable
 - *Resources:* ATX crime database (1 gb json file!), 
