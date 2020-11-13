@@ -14,14 +14,14 @@
 
 -**BS detection** 
 - *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). 
-- *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels. Simply put, can I build a model that can classify editorial desk vs. newsroom?
+- *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels.
 - *Resources:* Twitter or Facebook API w/ articles flagged as "fake"
 - *Obstacles:* I don't know. I just thought of this idea. Is it possible w/ my time and skill set restraints? 
 
 -**Beating the Odds** 
 - *Features:* educational level, educaitonal field, technical experience, age, race, gender, campus location, remote vs local, staff.
 - *Target:* Will a student get a job in 6 months?
-- *Resources:* Galvanize DSI Entry survey data. Webscrapping the linkedin galvanize alum page.
+- *Resources:* Galvanize DSI Entry survey data. webscrapping the linkedin galvanize alum page.
 - *Obstacles:* Can I have that data? All the data I've seen is already aggregated.
 
 -**Free BI analysis** 
@@ -35,6 +35,8 @@
 - *Target:* what is the advantage of being the incumbant in presidential elections. How much does an incumbant beat his odds?
 - *Resources:* historical polling and election date
 - *Obstacles:* I'm interested in the election/polling data that is available on 538. I wanted to do something about voter supressiong and comparting polling sentament of communities vs. how they vote. Is there a similar trend based on communities that historically experience voter supression? I'm not sure how legit the data would be for how communities actually voted. that may be based on exit polling which may not be iid of polling data like election data might be.
+
+-**Covid**
 
 
 ## I really have no preference. 
