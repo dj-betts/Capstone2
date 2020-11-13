@@ -9,7 +9,7 @@
 -**The Sweet Spot** 
 - *Features:* gun laws, gun sales, gun registration, gun ownership
 - *Target:* gun violence
-- *Resources:* a small csv. Could I build a decision tree w/ state gun laws. *Could I figure out which laws are most effective?* Also, *can I use "Beysian statistics"* to point out cases where cities have high gun violence, strict laws, but close proximity to states w/ lax gun laws (i.e. Chicago, or even historical examples like NYC in the 70's)
+- *Resources:* a small csv. *Could I build a decision tree w/ state gun laws?* *Could I figure out which laws are most effective?* Also, *can I use "Beysian statistics"* to point out cases where cities have high gun violence, strict laws, but close proximity to states w/ lax gun laws (i.e. Chicago, or even historical examples like NYC in the 70's)
 - *Obstacles:* the small database is kinda weak. 
 
 -**BS detection** 
