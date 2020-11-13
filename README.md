@@ -1,18 +1,19 @@
 # In no particular order.
+
 -**Building a better neighborhood:**
 - *Features:* strave heat map and crime data base joined on geodata.
 - *Target:* crime, housing price, some social/econ variable
-- *Resources:* ATX crime database (1 gb json file!), 
+- *Resources:* ATX crime database (1 gb json file!), python geolibrary.
 - *Obstacles:* It will be tricky to get the data from the heat map.
 
 -**The Sweet Spot** 
 - *Features:* gun laws, gun sales, gun registration, gun ownership
 - *Target:* gun violence
-- *Resources:* a small csv.
+- *Resources:* a small csv. Could I build a decision tree w/ state gun laws. *Could I figure out which laws are most effective?* Also, *can I use "Beysian statistics"* to point out cases where cities have high gun violence, strict laws, but close proximity to states w/ lax gun laws (i.e. Chicago, or even historical examples like NYC in the 70's)
 - *Obstacles:* the small database is kinda weak. 
 
 -**BS detection** 
-- *Features:* NLP of articles posted on twitter and facebook
+- *Features:* NLP of articles posted on twitter and facebook. searching for 
 - *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion
 - *Resources:* twitter/facebook api w/ articles flagged as fake? I'd like to apply it to NLP of podcasts and youtube channels.
 - *Obstacles:* I don't know. I just thought of this idea. Is it possible w/ my time and skill set restraints? 
@@ -28,3 +29,5 @@
 - *Target:* any BI analysis they don't have the budget to explore
 - *Resources:* I'd have to find a business owner or BI team leader. I know a few, but haven't initiated.
 - *Obstacles:* Can I do this? I know Josh has don't that? Could I offer that for free? Is that weird?
+
+## I really have no preference. 
