@@ -1,8 +1,9 @@
 # In no particular order.
-####
-Features: strave heat map,
+
+Features: strave heat map and crime data base joined on geodata.
 Target: crime, housing price, some social/econ variable
-Resources: 
+Resources: ATX crime database (1 gb json file!), 
+Obstacles: It will be tricky to get the data from the heat map.
 
 Features: gun laws, gun sales, gun registration, gun ownership
 Target: gun violence
