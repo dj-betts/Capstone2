@@ -14,14 +14,14 @@
 
 -**BS detection** 
 - *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). 
-- *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels.
+- *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels. Simply put, can I build a model that can classify editorial desk vs. newsroom?
 - *Resources:* Twitter or Facebook API w/ articles flagged as "fake"
 - *Obstacles:* I don't know. I just thought of this idea. Is it possible w/ my time and skill set restraints? 
 
 -**Beating the Odds** 
 - *Features:* educational level, educaitonal field, technical experience, age, race, gender, campus location, remote vs local, staff.
 - *Target:* Will a student get a job in 6 months?
-- *Resources:* Galvanize DSI Entry survey data. webscrapping the linkedin galvanize alum page.
+- *Resources:* Galvanize DSI Entry survey data. Webscrapping the linkedin galvanize alum page.
 - *Obstacles:* Can I have that data? All the data I've seen is already aggregated.
 
 -**Free BI analysis** 
