@@ -3,7 +3,7 @@
 -**Building a better neighborhood:**
 - *Features:* strave heat map and crime data base joined on geodata.
 - *Target:* crime, housing price, some social/econ variable
-- *Resources:* ATX crime database (1 gb json file!), python geolibrary.
+- *Resources:* ATX crime database (1 gb json) w/ geo metadata, python geolibrary.
 - *Obstacles:* It will be tricky to get the data from the heat map.
 
 -**The Sweet Spot** 
