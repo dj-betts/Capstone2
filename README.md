@@ -1,20 +1,20 @@
 # In no particular order.
 
 -**Building a better neighborhood:**
-- *Features:* strave heat map and crime data base joined on geodata.
+- *Features:* strave heat map and crime data base joined on geodata. [Strava](https://www.strava.com/heatmap).
 - *Target:* crime, housing price, some social/econ variable
 - *Resources:* ATX crime database (1 gb json) w/ geo metadata, python geolibrary.
-- *Obstacles:* It will be tricky to get the data from the heat map.
+- *Obstacles:* It will be tricky to get the data from the heat map. It's built on/in/with mapbox [Mapbox](https://www.mapbox.com/about/maps/).
 
 -**The Sweet Spot** 
 - *Features:* gun laws, gun sales, gun registration, gun ownership
 - *Target:* gun violence
-- *Resources:* a small csv. *Could I build a decision tree w/ state gun laws?* *Could I figure out which laws are most effective?* Also, *can I use "Beysian statistics"* to point out cases where cities have high gun violence, strict laws, but close proximity to states w/ lax gun laws (i.e. Chicago, or even historical examples like NYC in the 70's)
-- *Obstacles:* the small database is kinda weak. 
+- *Resources:* a small csv. *Could I build a decision tree w/ state gun laws?* *Could I figure out which laws are most effective?*
+- *Obstacles:* the small database is kinda weak. I also don't really like this one because I don't think more guns helps lower gun violence at all. but I could still build a model that includes it. Another idea is to ONLY use gun laws, categoriezed by similiarity of function, to predict the most effective combination of laws to reduce gun violence.
 
--**BS detection** 
-- *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). 
-- *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels.
+-**BiaS detection** 
+- *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). OR I could pull all articles from a newspapers and analyze articles from op-ed, editorial, and new desks.
+- *Target:* predicitng if an article is "fake" based on words used. OR measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels. or maybe the model is choosing between the three different types of newspaper articles from the same newspaper. I think it's be more effective to use a wide variety of sources to improve independence. 
 - *Resources:* Twitter or Facebook API w/ articles flagged as "fake"
 - *Obstacles:* I don't know. I just thought of this idea. Is it possible w/ my time and skill set restraints? 
 
@@ -39,4 +39,4 @@
 -**Covid**
 
 
-## I really have no preference. 
+
