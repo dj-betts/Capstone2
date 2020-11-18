@@ -6,12 +6,6 @@
 - *Resources:* ATX crime database (1 gb json) w/ geo metadata, python geolibrary.
 - *Obstacles:* It will be tricky to get the data from the heat map. It's built on/in/with mapbox [Mapbox](https://www.mapbox.com/about/maps/).
 
-~~-**The Sweet Spot** 
-- *Features:* gun laws, gun sales, gun registration, gun ownership
-~~- *Target:* gun violence
-- *Resources:* a small csv. *Could I build a decision tree w/ state gun laws?* *Could I figure out which laws are most effective?*
-~~- *Obstacles:* the small database is kinda weak. I also don't really like this one because I don't think more guns helps lower gun violence at all. but I could still build a model that includes it. Another idea is to ONLY use gun laws, categoriezed by similiarity of function, to predict the most effective combination of laws to reduce gun violence.
-
 -**Bias detection** 
 - *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). OR I could pull all articles from a newspapers and analyze articles from op-ed, editorial, and new desks.
 - *Target1:* predicitng if an article is "fake" based on words used
