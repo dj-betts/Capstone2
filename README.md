@@ -34,7 +34,7 @@ accuracy = 0.9478260869565217
 recall = 0.9257142857142857
 precision = 0.9700598802395209
 
-Next steps:
+### Next steps:
 - genie importance plot to find most influencial words (feature engineering?)
 
 - ROC curves (decision rules notes)
@@ -43,12 +43,21 @@ Next steps:
 
 - currently len(feature_names) = 219112 (len(feature_names) = 235420 if strip_accents='ascii'
 - **think about what it would do to limit the bag of words?
+- **high demensionality 
+- ** feature engineering - two ways. mathematically  & domain knowledge-ically.
+* mathematically
+* domain knowledge-ically
+
 
 - need better visuals of data. word legnths. common words. word cloud?... heatmap of geni importance plot?
 
 - depending on genie importance plot add stop words. work more w/ the vectorizer. 
 
-
+### Blocks:
+- my github is a mess. do i need to look into gitignore? 
+- organizaing workflow
+- how do i keep my models/vectorizers straight? what is random state?
+- 
 
 
 
@@ -58,7 +67,7 @@ Next steps:
 
 # notes
 
-from article (https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
+## from article (https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
 1. collect more data
 2. try changing performace matric
@@ -84,7 +93,7 @@ from article (https://machinelearningmastery.com/tactics-to-combat-imbalanced-cl
     
     
 4. Try generating synthetic samples
-    
+     
     - #### ?? You could sample them empirically within your dataset or you could use a method like Naive Bayes that can sample each attribute independently when run in reverse. **You will have more and different data, but the non-linear relationships between the attributes may not be preserved.** ??
 
 5. Try differente algorithms
@@ -96,3 +105,10 @@ from article (https://machinelearningmastery.com/tactics-to-combat-imbalanced-cl
 6. Try penalized models
 7. Try a Different Perspective
 8. Try getting creative
+
+## curse of dimensionality
+
+The common theme of these problems is that when the dimensionality increases, the volume of the space increases so fast that the available data become sparse.
+
+
+
