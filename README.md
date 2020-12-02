@@ -1,3 +1,4 @@
+# proposal-ish
 -**Bias detection** 
 - *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). OR I could pull all articles from a newspapers and analyze articles from op-ed, editorial, and new desks.
 - *Target1:* predicitng if an article is "fake" based on words used
@@ -35,6 +36,7 @@ recall = 0.9257142857142857
 precision = 0.9700598802395209
 
 ### Next steps:
+
 - genie importance plot to find most influencial words (feature engineering?)
 
 - ROC curves (decision rules notes)
@@ -53,21 +55,34 @@ precision = 0.9700598802395209
 
 - depending on genie importance plot add stop words. work more w/ the vectorizer. 
 
+# 1. refine dataset OR optimize vectorizer
+
 ### Blocks:
+
 - my github is a mess. do i need to look into gitignore? 
 - organizaing workflow
 - how do i keep my models/vectorizers straight? what is random state?
-- 
+- can't get 2018 json request to work. LocationParseError: Failed to parse: <Response [200]>
+
+
+### Questions:
+- are random forest inexpensve to run?
 
 
 
+## notes
+
+### notes on NYTimes staff:
+
+- [NYTIMES staff](https://en.wikipedia.org/wiki/List_of_The_New_York_Times_employees)
+- [The New York Times Editorial Board](https://www.nytimes.com/interactive/2018/opinion/editorialboard.html)
+- [Kathleen Kingsbury](https://en.wikipedia.org/wiki/Kathleen_Kingsbury) acting Editorial Page Editor June 7, 2020 - the November election" at The New York Times, replacing James Bennet.
 
 
+- [James Bennet](https://en.wikipedia.org/wiki/James_Bennet_(journalist) editorial page editor May 2016-June 2020
+records to 05/2016
 
-
-# notes
-
-## from article (https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
+### from article (https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
 1. collect more data
 2. try changing performace matric
@@ -106,9 +121,13 @@ precision = 0.9700598802395209
 7. Try a Different Perspective
 8. Try getting creative
 
-## curse of dimensionality
+### curse of dimensionality
 
 The common theme of these problems is that when the dimensionality increases, the volume of the space increases so fast that the available data become sparse.
 
+
+### lead's notes
+
+geni importance plot
 
 
