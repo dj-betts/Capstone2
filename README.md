@@ -97,6 +97,35 @@ recall = 0.9095238095238095
 precision = 0.9947916666666666
 1015 5 95 955
 
+Vectorizer: SnowballStemmer('english'). stop_words='english'. max_features = None
+*did fit seperate from transform
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.9304347826086956
+recall = 0.8942857142857142
+precision = 0.9660493827160493
+tn=987, fp=33, fn=111, tp=939)
+
+
+### finally decided to delete the tail w/ the extra paragraph from beautiful soup
+sum(none_df.type_of_material == "Op-Ed") = 182
+sum(none_df.type_of_material == "News") = 3838
+
+
+@       0.022 +/- 0.003
+facebook0.022 +/- 0.003
+twitter 0.006 +/- 0.001
+york    0.006 +/- 0.002
+)       0.005 +/- 0.002
+follow  0.004 +/- 0.001
+said    0.003 +/- 0.001
+polici  0.001 +/- 0.000
+data    0.000 +/- 0.000
+econom  0.000 +/- 0.000
+tuesday 0.000 +/- 0.000
+elect   0.000 +/- 0.000
+mean    0.000 +/- 0.000
+
+
 # what is this random forest doing?
 
 1. takes all X and y which is my text and classifiers as vectors(tfidf)
@@ -205,6 +234,10 @@ The common theme of these problems is that when the dimensionality increases, th
 - top 20 words for each class
 - min and max df. 
 - stem and lemmetize
-- 
+
+
+
+- max features trim
+- min/max df freq trim
 
 
