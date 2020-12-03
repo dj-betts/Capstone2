@@ -18,7 +18,8 @@
 
 12/1: downloaded rest of 2019 throughout the day. realized my .89 accuracy was because my model was guessing everying was 'news' because of imbalanced classed (10:1). read in the morning. created a notebook for building a dataset out of the full 2019 file. finally got to full data set.
 
-Vectorizer:
+
+Vectorizer: len(feature_names) = 221213
 TfidfVectorizer(stop_words='english')
 
 Imbalanced-learn: 
@@ -34,6 +35,41 @@ RandomForestClassifier(max_depth=2, random_state=0)
 accuracy = 0.9478260869565217
 recall = 0.9257142857142857
 precision = 0.9700598802395209
+
+12/2: trimmed extra starting/finishing paragraphs leftover from beautiful soup
+
+Models: 
+Vectorizer: len(feature_names) = 237438 by function:trim_fat, strip_accents='ascii'
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.9241545893719807
+recall = 0.878095238095238
+precision = 0.9695057833859095
+
+Vectorizer: len(feature_names) = 231896 **triming** most all except (~3000) articles
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.9478260869565217
+recall = 0.9095238095238095
+precision = 0.9865702479338843
+
+Vectorizer: (feature_names) = 5000
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.9497584541062802
+recall = 0.900952380952381
+**precision = 1.0 (rate of correct predictions of op-ed articles out of all predictions.never guessed op-ed)**
+(tn, fp, fn, tp)=(1020, 0, 104, 946)
+**what's happening here? it's not guessing that anything is op-ed...?**
+
+accuracy = (tp + tn) / (tn + fn + tp + fp)
+recall = (tp) / (tp + fn)
+precision = (tp) / (tp + fp)
+
+# what is this random forest doing?
+
+1. takes all X and y which is my text and classifiers as vectors(tfidf)
+2. take a random number of 8278 instances (tfidf vector) and uses a random number of 219112 features to make best decision.
+3. bags/bootstraps that model
+4. does it again a bunch of times
+
 
 ### Next steps:
 
@@ -52,6 +88,8 @@ precision = 0.9700598802395209
 
 
 - need better visuals of data. word legnths. common words. word cloud?... heatmap of geni importance plot?
+
+
 
 - depending on genie importance plot add stop words. work more w/ the vectorizer. 
 
@@ -128,6 +166,11 @@ The common theme of these problems is that when the dimensionality increases, th
 
 ### lead's notes
 
-geni importance plot
+- geni importance plot
+- difference in article length for op-ed vs news
+- top 20 words for each class
+- min and max df. 
+- stem and lemmetize
+- 
 
 
