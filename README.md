@@ -105,12 +105,6 @@ recall = 0.8942857142857142
 precision = 0.9660493827160493
 tn=987, fp=33, fn=111, tp=939)
 
-
-### finally decided to delete the tail w/ the extra paragraph from beautiful soup
-sum(none_df.type_of_material == "Op-Ed") = 182
-sum(none_df.type_of_material == "News") = 3838
-
-
 @       0.022 +/- 0.003
 facebook0.022 +/- 0.003
 twitter 0.006 +/- 0.001
@@ -124,6 +118,19 @@ econom  0.000 +/- 0.000
 tuesday 0.000 +/- 0.000
 elect   0.000 +/- 0.000
 mean    0.000 +/- 0.000
+
+### finally decided to delete the tail w/ the extra paragraph from beautiful soup
+sum(none_df.type_of_material == "Op-Ed") = 182
+sum(none_df.type_of_material == "News") = 3838
+
+Vectorizer:  
+SnowballStemmer('english'). stop_words='english'. max_features = None
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.7842344618494189
+recall = 0.6722772277227723
+precision = 0.8761290322580645
+tn=873, fp=96, fn=331, tp=679)
+234816
 
 
 # what is this random forest doing?
