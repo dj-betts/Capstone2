@@ -36,7 +36,7 @@ accuracy = 0.9478260869565217
 recall = 0.9257142857142857
 precision = 0.9700598802395209
 
-12/2: trimmed extra starting/finishing paragraphs leftover from beautiful soup
+**12/2: trimmed extra starting/finishing paragraphs leftover from beautiful soup**
 
 Models: 
 Vectorizer: len(feature_names) = 237438 by function:trim_fat, strip_accents='ascii'
@@ -62,6 +62,40 @@ recall = 0.900952380952381
 accuracy = (tp + tn) / (tn + fn + tp + fp)
 recall = (tp) / (tp + fn)
 precision = (tp) / (tp + fp)
+
+STRUGGLED with NLTK at 10pm. realized after stemming and lemmatizing that hadn't removed punctuation. by this point I ralized how nltk worked, through list comprehensions, i think?
+
+[Stemming and Lemmatization](https://medium.com/towards-artificial-intelligence/how-and-why-to-implement-stemming-and-lemmatization-from-nltk-5f0cc69d2af)
+
+Stemming:
+-types: Porter's algorithm. the Snowball algorithm.
+"Stemming also reduces the accuracy of a model."
+"Snowball Stemmer is an improved version of the Porter stemmer. This method is highly precise over large data-sets."
+
+Lemmatization:
+"The accuracy of the NLP model is comparatively high in this method."
+"The root word is known as a lemma."
+
+*Porter and Snoball stemming methods convert some words to non-dictionary words. Such conversion of words restricts the use of porter and snowball stemming methods to search engines, n-gram context, and text classification problems. 
+
+*Lemmatization can be used in paragraph/document summarization, word/sentence prediction, sentiment analysis, and others.
+
+*Lemmatization is mandatory for critical projects and projects where sentence structure matter like language applications. Stemming or Lemmatization do affect precision and recall. Stemming reduces precision performance, and increases recall performance.*
+
+Models:
+Vectorizer: SnowballStemmer('english'). stop_words=None?. features = 263722
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.9289855072463769
+recall = 0.9057142857142857
+precision = 0.9519519519519519
+(tn, fp, fn, tp) = 972 48 99 951
+
+Vectorizer: SnowballStemmer('english'). stop_words='english'. max_features = 10000
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.9516908212560387
+recall = 0.9095238095238095
+precision = 0.9947916666666666
+1015 5 95 955
 
 # what is this random forest doing?
 
@@ -91,7 +125,7 @@ precision = (tp) / (tp + fp)
 
 
 
-- depending on genie importance plot add stop words. work more w/ the vectorizer. 
+- depending on genie importance plot add stop words. work more w/ the vectorizer.
 
 # 1. refine dataset OR optimize vectorizer
 
