@@ -123,6 +123,7 @@ mean    0.000 +/- 0.000
 sum(none_df.type_of_material == "Op-Ed") = 182
 sum(none_df.type_of_material == "News") = 3838
 
+
 Vectorizer:  
 SnowballStemmer('english'). stop_words='english'. max_features = None
 RandomForestClassifier(max_depth=2, random_state=0)
@@ -131,6 +132,32 @@ recall = 0.6722772277227723
 precision = 0.8761290322580645
 tn=873, fp=96, fn=331, tp=679)
 234816
+
+
+TfidfVectorizer(max_df=0.9, min_df=0.15,
+                tokenizer=<function snowball_tokenize at 0x7fcec1177f80>)
+2020-12-03 20:33:43.177976
+accuracy = 0.9196563921172309
+recall = 0.9574257425742574
+precision = 0.8928901200369345
+tn=853, fp=116, fn=43, tp=967)
+num_features = 540
+<class 'numpy.ndarray'>
+CPU times: user 14.6 ms, sys: 3.48 ms, total: 18.1 ms
+Wall time: 15.7 ms
+
+
+
+### punctuation work
+Vectorizer:  
+SnowballStemmer('english'). stop_words='english'. max_features = None
+RandomForestClassifier(max_depth=2, random_state=0)
+accuracy = 0.8388074785245073
+recall = 0.7663366336633664
+precision = 0.9031505250875146
+tn=886, fp=83, fn=236, tp=774)
+254169
+2
 
 
 # what is this random forest doing?
