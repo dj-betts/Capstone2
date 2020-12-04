@@ -159,8 +159,17 @@ tn=886, fp=83, fn=236, tp=774)
 254169
 2
 
+## trimmed OG dataset by removing 
+for the year of 2019 that leaves 28213 'news' articles and '2043' op-ed articles
 
-# what is this random forest doing?
+### still need to move df.type_of_material == news.section_name == 'Opinion' to "Op-Ed"
+
+
+
+
+
+
+#### what is this random forest doing?
 
 1. takes all X and y which is my text and classifiers as vectors(tfidf)
 2. take a random number of 8278 instances (tfidf vector) and uses a random number of 219112 features to make best decision.
@@ -265,13 +274,10 @@ The common theme of these problems is that when the dimensionality increases, th
 
 - geni importance plot
 - difference in article length for op-ed vs news
-- top 20 words for each class
-- min and max df. 
-- stem and lemmetize
-
-
-
-- max features trim
-- min/max df freq trim
+~~- top 20 words for each class~~
+~~- min and max df~~
+~~- stem and lemmetize~~
+~~- max features trim
+~~- min/max df freq trim
 
 
