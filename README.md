@@ -165,7 +165,16 @@ for the year of 2019 that leaves 28213 'news' articles and '2043' op-ed articles
 ### still need to move df.type_of_material == news.section_name == 'Opinion' to "Op-Ed"
 
 
+12/4 
 
+num_features = 559
+(559,)
+accuracy = 0.8359840954274353
+recall = 0.8551859099804305
+precision = 0.8276515151515151
+None
+vectorizer = TfidfVectorizer(max_df=0.85, min_df=0.15, strip_accents='ascii',
+                tokenizer=<function snowball_tokenize at 0x7fcfb4d1ab00>)
 
 
 
