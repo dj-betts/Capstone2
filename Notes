@@ -1,0 +1,26 @@
+Data: 2016, 2017, 2019
+
+wordnet lemm
+accuracy = 0.8819141031356814
+recall = 0.7760591795561533
+precision = 0.4110418521816563
+(109790, 13062, 2560, 9168)
+features = 563
+
+
+
+MODEL: 3 years of data
+
+# (100935, 563) (33645, 563) (100935,) (33645,)
+# CPU times: user 65.7 ms, sys: 16.5 ms, total: 82.2 ms
+# Wall time: 81.8 ms
+
+[(0, 8754), (1, 8754)]
+RandomUnderSampler(random_state=0)
+CPU times: user 42.3 ms, sys: 9.21 ms, total: 51.6 ms
+Wall time: 51.6 ms
+
+accuracy = 0.8819141031356814
+recall = 0.7760591795561533
+precision = 0.4110418521816563
+tn:27364 fp:3307 fn:666 tp:2308
