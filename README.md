@@ -6,3 +6,10 @@
 - *Target3:* model that correctly guesses whether an article is from an op-ed section or not. These are all a similar idea.
 - *Resources:* Twitter or Facebook API w/ articles flagged as "fake". NYTimes op-ed vs news desk.
 - *Obstacles:* It feels like a big project and I'm not sure if it's in my skill set. 
+
+
+![Average word count in 2019](img/hist_wordcount_2019.png)
+
+![Number of Op-Ed and News articles](img/num_opednews_2019.png)
+
+![Important Features](img/important_feat_bar.png)
