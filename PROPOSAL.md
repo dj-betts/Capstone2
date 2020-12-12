@@ -1,6 +1,22 @@
-# capstone3
+# Classifying opinion in the New York Times
 
-# Proposal Checklist 
+## Proposal:
+#### Problem:
+- Much of music classification is based on similarity between kew words, artist, or similar user behavior. How can Machine Learning discrimiate bewtween audio classes using feature extraction?
+
+#### Data
+- .wav files for sound effects from online databases https://freesound.org/
+- Recording a sample of voices and classify on speakers. 
+
+- [Theodoros Giannakopoulos](https://hackernoon.com/u/tyiannak) [classified on genre](https://hackernoon.com/intro-to-audio-analysis-recognizing-sounds-using-machine-learning-qy2r3ufl) and also build a regression model on audio feature extraction. 
+- He's also shared the library he build, [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis)
+-  
+
+
+
+
+
+
 - Business Case: the capstone should have a goal. 
 - The project should have some minimal endpoint that will be interesting to someone. 
 - Scope: Can you complete the capstone in one week? 
