@@ -1,12 +1,15 @@
-# proposal-ish
--**Bias detection** 
-- *Features:* NLP of articles posted on twitter and facebook.  I want to focus on certain type of words that tend to be highly biased, for example "absolutes"  (i.e. 'totally', 'finally', 'all', 'every') for language that is more "nuanced" (i.e. idk. not those words?). OR I could pull all articles from a newspapers and analyze articles from op-ed, editorial, and new desks.
-- *Target1:* predicitng if an article is "fake" based on words used
-- *Target2:* measure the bias of an article based on the words with some threshold of bias vs. opinion. it to NLP of podcasts and youtube channels.
-- *Target3:* model that correctly guesses whether an article is from an op-ed section or not. These are all a similar idea.
-- *Resources:* Twitter or Facebook API w/ articles flagged as "fake". NYTimes op-ed vs news desk.
-- *Obstacles:* It feels like a big project and I'm not sure if it's in my skill set. 
+# Classifying "Op-Ed" vs "News"
 
+## Background:
+##### Format matters. As the modern consumer is bombarded with news and opionion from multiple sources via multiple formats it is becoming increasingly difficult for a consumer to distinguish what they should take as fact from what they should take as opinion by design.
+
+###### I was interested in buildilng a model that classified stories written for the "Op-Ed" desk and those written for the "News" desk, the two formats that coexist in every news room, print or broadcast.
+
+## Objectives:
+
+###### 1. Build a classification model that predicts "Op-Ed" from "News" pieces using NLP on the body of the articles themselves.
+###### 2. Feature engeineer data sets that control for topic to discover features that differenciate bias in a specific topic. (eg. classfiying politcal Op-Ed from news stories about polciatics. 
+###### 3. Build a [XGBoost](https://xgboost.readthedocs.io/en/latest/#)
 
 ![Average word count in 2019](img/hist_wordcount_2019.png)
 
