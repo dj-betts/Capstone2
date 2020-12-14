@@ -46,5 +46,5 @@
 ##### 4. Optimize models.
 ##### 5. Flask app interactivity. 
 
-![normalize for true](img/norm_true)
-![normalize for pred](img/norm_pred)
+![normalize for true](img/norm_true.png)
+![normalize for pred](img/norm_pred.png)
