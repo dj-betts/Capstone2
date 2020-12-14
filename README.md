@@ -1,18 +1,50 @@
 # Classifying "Op-Ed" vs "News"
 
 ## Background:
-##### Format matters. As the modern consumer is bombarded with news and opionion from multiple sources via multiple formats it is becoming increasingly difficult for a consumer to distinguish what they should take as fact from what they should take as opinion by design.
-
-###### I was interested in buildilng a model that classified stories written for the "Op-Ed" desk and those written for the "News" desk, the two formats that coexist in every news room, print or broadcast.
+##### Format matters. As the modern consumer is bombarded with news and opinion from multiple sources via multiple formats it is becoming increasingly difficult for a consumer to distinguish what they should take as fact from what they should, by design, read as an opinion. I was interested in building a model that classified stories written for the "Op-Ed" desk and those written for the "News" desk, the two formats that coexist in every newsroom, print or broadcast.
 
 ## Objectives:
 
-###### 1. Build a classification model that predicts "Op-Ed" from "News" pieces using NLP on the body of the articles themselves.
-###### 2. Feature engeineer data sets that control for topic to discover features that differenciate bias in a specific topic. (eg. classfiying politcal Op-Ed from news stories about polciatics. 
-###### 3. Build a [XGBoost](https://xgboost.readthedocs.io/en/latest/#)
+##### 1. Build a classification model that predicts "Op-Ed" from "News" pieces using NLP on the body of the articles themselv
 
-![Average word count in 2019](img/hist_wordcount_2019.png)
+
+## The Data:
+
+##### In 2019, the New York Times published 41,748 articles, not all of them were published in print. I obtained metadata from each article via the TImes Archive API, and scrapped each URL for the body of each article. In total, my final corpus of documents was 26,472 News articles and 2,012 Op-Ed articles. 
 
 ![Number of Op-Ed and News articles](img/num_opednews_2019.png)
 
+---
+
+## Model Performance: 
+
+![Confusion Matrix](img/conf_matx.png)
+
+## Analysis:
+
+###### Important features: Many features are political and are causing the model to predict based on topic, not sentiment. 
+
+>said
+>trump   
+>political
+>democratic
+>country 
+>election
+>policy  
+>republican
+>york    
+>government
+>percent
+
 ![Important Features](img/important_feat_bar.png)
+
+
+## Next Steps:
+
+##### 2. Engineer data sets that control for the topic to discover features that differentiate bias in a specific topic. (eg. classifying political Op-Ed from news stories about politics. 
+##### 3. Build a [XGBoost](https://xgboost.readthedocs.io/en/latest/#)
+##### 4. Optimize models.
+##### 5. Flask app interactivity. 
+
+![normalize for true](img/norm_true)
+![normalize for pred](img/norm_pred)
