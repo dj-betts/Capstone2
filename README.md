@@ -24,18 +24,6 @@
 
 ###### Important features: Many features are political and are causing the model to predict based on topic, not sentiment. 
 
->said
->trump   
->political
->democratic
->country 
->election
->policy  
->republican
->york    
->government
->percent
-
 ![Important Features](img/important_feat_bar.png)
 
 
