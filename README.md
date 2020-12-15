@@ -39,9 +39,10 @@
 ![Important Features](img/important_feat_bar.png)
 
 
+
 ## Next Steps:
 
-##### 2. Engineer data sets that control for the topic to discover features that differentiate bias in a specific topic. (eg. classifying political Op-Ed from news stories about politics. 
+##### 1. Engineer data sets that control for the topic to discover features that differentiate bias in a specific topic. (eg. classifying political Op-Ed from news stories about politics. 
 ##### 3. Build a [XGBoost](https://xgboost.readthedocs.io/en/latest/#)
 ##### 4. Optimize models.
 ##### 5. Flask app interactivity. 
